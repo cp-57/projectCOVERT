@@ -23,7 +23,7 @@ def encode_message(message):
         # wrap tcp layer in ip layer
         send(ip/tcp)
 
-encode_message("put message here")
+encode_message("csaw{licen$e_t0_tr@nsmit_c0vertTCP$$$}")
 
 
 
