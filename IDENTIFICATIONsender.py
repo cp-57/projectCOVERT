@@ -1,14 +1,15 @@
+
 from scapy.all import IP,TCP,send
 
-pre_defined_key = 50
+pre_defined_key = 55
 
 # destination port
-dst_ip = "192.168.1.1" 
-dst_port = 1024           
+dst_ip = "10.10.0.19" 
+dst_port = 50000           
 
 # source port
-src_port = 443 
-src_ip = "192.168.1.2"
+src_ip = "10.10.0.4"
+src_port = 50000 
 
 
 def encode_message(message):
@@ -22,7 +23,7 @@ def encode_message(message):
         # wrap tcp layer in ip layer
         send(ip/tcp)
 
-encode_message("Hello World")
+encode_message("put message here")
 
 
 
